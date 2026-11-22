@@ -1,0 +1,147 @@
+practicum 2
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Library</title>
+</head>
+<body>
+
+  <header>
+    <h1>Digital Library</h1>
+    <p>Books and study spaces for students and faculty.</p>
+    <nav>
+      <a href="#categories">Categories</a> |
+      <a href="#books">Books</a> |
+      <a href="#facilities">Facilities</a> |
+      <a href="#media">Audio and Video</a> |
+      <a href="#location">Location</a> |
+      <a href="#membership">Membership</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Welcome</h2>
+      <p>Browse our books, check availability and join the library online.</p>
+      <figure>
+        <img src="images/library.jpg" alt="Students reading at long wooden tables in the library hall" width="500">
+        <figcaption>The main reading hall.</figcaption>
+      </figure>
+    </section>
+
+    <section id="categories">
+      <h2>Book Categories</h2>
+      <ul>
+        <li>Computer Science</li>
+        <li>Engineering</li>
+        <li>Management</li>
+        <li>Sciences</li>
+      </ul>
+    </section>
+
+    <section id="books">
+      <h2>Book List</h2>
+      <table border="1" cellpadding="6">
+        <tr>
+          <th>Cover</th>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Availability</th>
+        </tr>
+        <tr>
+          <td><img src="images/algorithms.jpg" alt="Cover of Introduction to Algorithms" width="60"></td>
+          <td>Introduction to Algorithms</td>
+          <td>T. H. Cormen</td>
+          <td>Available</td>
+        </tr>
+        <tr>
+          <td><img src="images/mechanics.jpg" alt="Cover of Engineering Mechanics" width="60"></td>
+          <td>Engineering Mechanics</td>
+          <td>R. C. Hibbeler</td>
+          <td>Checked out</td>
+        </tr>
+        <tr>
+          <td><img src="images/management.jpg" alt="Cover of Principles of Management" width="60"></td>
+          <td>Principles of Management</td>
+          <td>H. Koontz</td>
+          <td>Available</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="facilities">
+      <h2>Library Facilities</h2>
+      <article>
+        <h3>Reading Hall</h3>
+        <img src="images/reading-hall.jpg" alt="Rows of desks in the reading hall" width="250">
+        <p>Quiet seating for 300 readers.</p>
+      </article>
+      <article>
+        <h3>Computer Lab</h3>
+        <img src="images/computer-lab.jpg" alt="Computer lab with rows of workstations" width="250">
+        <p>60 computers with access to e-journals.</p>
+      </article>
+    </section>
+
+    <section id="media">
+      <h2>Audio and Video</h2>
+
+      <article>
+        <h3>Listen: Library Introduction</h3>
+        <audio controls>
+          <source src="audio/library-intro.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <p>A short audio guide to borrowing books and using the library.</p>
+      </article>
+
+      <article>
+        <h3>Watch: Library Tour</h3>
+        <video controls width="500" poster="images/tour-poster.jpg">
+          <source src="video/library-tour.mp4" type="video/mp4">
+          <track src="captions/library-tour.vtt" kind="captions" srclang="en" label="English" default>
+          Your browser does not support the video element.
+        </video>
+        <p>A two-minute tour of the reading halls, computer lab and issue counter. English captions are available.</p>
+      </article>
+    </section>
+
+    <section id="location">
+      <h2>Find Us</h2>
+      <iframe
+        src="https://www.openstreetmap.org/export/embed.html?bbox=76.98%2C10.98%2C77.02%2C11.02&amp;layer=mapnik"
+        title="Map showing the library location"
+        width="500" height="320" loading="lazy">
+      </iframe>
+      <p><a href="https://www.openstreetmap.org/#map=14/11.00/77.00" target="_blank" rel="noopener">View a larger map</a></p>
+    </section>
+
+    <section id="membership">
+      <h2>Membership Form</h2>
+      <form>
+        <p>Name: <input type="text" name="name"></p>
+        <p>ID: <input type="text" name="id"></p>
+        <p>Email: <input type="email" name="email"></p>
+        <p>
+          Role:
+          <select name="role">
+            <option>Student</option>
+            <option>Faculty</option>
+          </select>
+        </p>
+        <button type="submit">Join</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Contact: <a href="mailto:library@institution.edu">library@institution.edu</a></p>
+    <p>&copy; 2026 Digital Library</p>
+  </footer>
+
+</body>
+</html>
